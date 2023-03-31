@@ -1,0 +1,333 @@
+@import '../utils/theme.scss';
+
+.dashboards {
+
+    // overall position & dimensions
+    display: flex;
+    //   flex-direction: column;
+    height: 100vh;
+    width: 1400px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+
+    // test
+    // background: rgba(77, 209, 209, 0.5);
+
+    &__outer {
+
+        // position
+        display: flex;
+        height: 700px;
+        width: 1400px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+
+        // test
+        // background: rgba(133, 58, 150, 0.5);
+
+        &__left {
+
+            // attributes
+            user-select: none;
+
+            //position
+            position: relative;
+            top: 30px;
+            left: 110px;
+
+            // dimensions
+            height: 300px;
+            width: 2%;
+
+            // structure
+            border: none;
+            border-radius: 20px;
+
+            // visuals
+            background-color: $secondary-color;
+
+            // animation
+            &:hover {background: rgba(233, 159, 159, 0.5);}
+        
+            &:active {
+        
+                background-color: rgba(233, 159, 159, 0.9);
+                box-shadow: 1px 0px rgb(113, 113, 113);
+                transform: translateY(4px);
+        
+            }
+
+        }
+
+        &__inner {
+
+            // position
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 1200px;
+            margin: 0 auto;
+            align-items: center;
+            justify-content: center;
+    
+            // test
+            // background: rgba(128, 216, 56, 0.5);
+
+            &__header {
+
+                // position
+                display: flex;
+                margin-top: -2%;
+                margin-bottom: 0%;
+
+                // dimensions
+                width: 100%;
+
+                align-items: center;
+                justify-content: center;
+
+                // test
+                // background: rgba(189, 49, 49, 0.5);
+
+                &__title {
+
+                    // attributes
+                    user-select: none;
+
+                    // position
+                    display: flex;
+                    // margin-left: 70px;
+                    position: relative;
+                    left: 40px;
+
+                    // dimensions
+                    height: 60%;
+                    width: 800px;
+
+                    // structure
+                    border-radius: 20px;
+
+                    // contents positioning
+                    align-items: center;
+                    justify-content: center;
+
+                    // visuals
+                    background: $tertiary-color;
+
+                    &__text {
+
+                        // position
+                        margin-top: 5px;
+                        margin-left: 30px;
+        
+                        // visuals (text)
+                        font-weight: 550;
+                        font-size: 30px;
+                        color: rgba(255, 255, 255, 1);
+                        text-shadow: 0 5px 0.15em rgba(0, 0, 0, 0.5), 0 0.05em 0.1em rgba(0, 0, 0, 0.5);
+        
+                        // test
+                        // background: rgba(199, 185, 29, 0.5);
+
+                    }
+
+                }
+
+                &__user {
+
+                    // position
+                    // display: flex;
+                    // margin-right: -15%;
+                    position: relative;
+                    left: 50px;
+
+                    // dimensions
+                    width: 360px;
+
+                    // test
+                    // background: rgba(199, 185, 29, 0.5);
+
+                }
+
+            }
+
+            &__body {
+
+                // attributes
+                overflow-y: auto;
+
+                // position
+                display: flex;
+                flex-direction: column;
+                height: 670px;
+                width: 1100px;
+                // height: 700px;
+
+
+                // structure
+                border-radius: 10px;
+
+                // visuals
+                background-color: $primary-color;
+                box-shadow: 5px 5px 10px 2px rgba(124, 124, 124, 0.8);
+
+                &__empty {
+
+                    // attributes
+                    overflow-y: auto;
+                    display: flex;
+                    flex-direction: column;
+    
+                    // position
+                    margin-top: 125px;
+                    margin-left: 160px;
+
+                    // dimensions
+                    height: 60%;
+                    width: 70%;
+    
+                    // structure
+                    border-radius: 10px;
+    
+                    // visuals
+                    background-color: rgba(255, 255, 255, 0.3);
+                    // box-shadow: 5px 5px 10px 2px rgba(124, 124, 124, 0.3);
+
+                    &__icon {
+
+                        // attributes
+                        display: flex;
+                        flex-direction: column;
+    
+                        // dimensions
+                        height: 26%;
+                        width: 100%;
+        
+                        // structure
+                        border-radius: 10px;
+
+                        // text
+                        font-size: 100px;
+        
+                        // test
+                        // background-color: rgba(231, 40, 40, 0.6);
+        
+                    }
+
+                    &__contents {
+
+                        // attributes
+                        display: flex;
+                        flex-direction: column;
+        
+                        // position
+                        margin-top: -20px;
+                        margin-left: 78px;
+    
+                        // dimensions
+                        height: 60%;
+                        width: 80%;
+        
+                        // structure
+                        border-radius: 10px;
+        
+                        // test
+                        // background-color: rgba(195, 58, 58, 0.6);
+
+                        &__text {
+
+                            // position
+                            margin-top: 30px;
+                            margin-left: 60px;
+
+                            // dimensions
+                            width: 500px;
+        
+                            // text
+                            font-size: 48px;
+            
+                            // test
+                            // background-color: rgba(120, 22, 22, 0.6);
+    
+                        }
+
+                        &__button {
+
+                            // position
+                            margin-top: 60px;
+                            margin-left: 33px;
+
+
+                            // dimensions
+                            height: 70px;
+                            width: 90%;
+
+                            // structure
+                            border-radius: 20px;
+                            border: none;
+        
+                            // text
+                            color: rgba(64, 64, 64, 1);
+                            font-size: 40px;
+                            font-weight: 500px;
+            
+                            // visuals
+                            background-color: rgba(181, 209, 136, 0.5);
+                            box-shadow: 5px 5px 10px 2px rgba(124, 124, 124, 0.1);
+
+                            transition: background-color 0.4s ease-out;
+
+                            // animation
+                            &:hover {background: rgba(181, 209, 136, 1);}
+                        
+                            &:active {
+                        
+                                color: rgb(64, 64, 64);
+                                background-color: rgba(181, 209, 136, 0.6);
+                                // box-shadow: 1px 0px rgb(113, 113, 113);
+                                transform: translateY(2px);
+        
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__right {
+
+            // attributes
+            user-select: none;
+
+            //position
+            position: relative;
+            top: 30px;
+            right: 110px;
+
+            // dimensions
+            height: 300px;
+            width: 2%;
+
+            // structure
+            border: none;
+            border-radius: 20px;
+
+            // visuals
+            background-color: $secondary-color;
+
+            // animation
+            &:hover {background: rgba(233, 159, 159, 0.5);}
+        
+            &:active {
+        
+                background-color: rgba(233, 159, 159, 0.9);
+                box-shadow: 1px 0px rgb(113, 113, 113);
+                transform: translateY(4px);
+        
+            }
+
+        }
+    }
+}

@@ -1,0 +1,96 @@
+@import '../utils/theme.scss';
+
+.blocks {
+       
+
+    // attributes
+    user-select: none; 
+    flex-direction: column;
+    overflow-y: auto;
+
+    position: relative;
+    top: 0;
+
+    // dimensions
+    height: 100vh;
+    width: 100%;
+
+    // positioning contents
+    align-items: center;
+
+    // visuals
+    // background: rgba(212, 44, 44, 0.5);
+
+    &__component {
+
+        // attributes
+        display: flex;
+        flex-direction: column;
+
+        // position
+        position: relative;
+        margin-top: 15px;
+        margin-left: 7px;
+
+        // dimensions
+        height: 200px;
+        width: 95%;
+
+        // structure
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 3px #999;
+
+        // positioning contents
+        align-items: center;
+
+        
+        background-color: rgba(255, 255, 255, 0.8);
+        
+        font-size: 20px;
+        color: rgba(0, 0, 0, 1);
+        // text-align: center;
+
+        &:hover {background-color: rgba(255, 255, 255, 0.3)}
+
+        &:active {
+
+            background-color: rgba(195, 253, 159, 0.5);
+            box-shadow: 1px 0px rgb(113, 113, 113);
+            transform: translateY(4px);
+
+        }
+
+        &__label {
+
+            // text
+            font-size: 18px;
+            font-weight: 700;
+
+        }
+
+        &__img {
+
+            // attributes
+
+            // position
+            position: relative;
+            margin-top: 20px;
+            // margin-left: 7px;
+            
+
+            // dimensions
+            height: 130px;
+            width: 220px;
+
+            // structure
+
+            // test
+            // background: rgb(245, 10, 10);
+            background-size: 87%;
+            // background-size: contain;
+            background-position: 50%;
+
+        }
+    }
+}

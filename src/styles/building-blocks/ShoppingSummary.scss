@@ -1,0 +1,156 @@
+.ss22 {
+
+    // attributes
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+
+    // dimensions
+    height: 180px;
+    width: 530px;
+
+    // structure
+    border-radius: 10px;
+
+    // test
+    // background: rgb(146, 29, 29, 0.9);
+
+    &__last {
+
+        // attributes
+        display: flex;
+
+        // position
+        margin-top: 10px;
+        margin-left: 25px;
+
+        // dimensions
+        height: 40%;
+        width: 90%;
+
+        // structure
+        border-radius: 10px;
+
+        // test
+        // background: rgba(61, 137, 76, 0.9);
+
+        &__text {
+
+            //position
+            margin-top: 15px;
+            margin-left: 25px;
+
+            // text
+            color: rgb(64, 64, 64);
+            font-size: 28px;
+            font-weight: 700;
+
+        }
+
+        &__value {
+
+            // attributes
+            display: flex;
+
+            // dimensions
+            width: 180px;
+
+            // position
+            position: fixed;
+            margin-top: 15px;
+            margin-left: 280px;
+
+            // position content
+            align-items: center;
+            justify-content: center;
+
+            // text
+            font-size: 28px;
+            font-weight: 700;
+
+            // test
+            // background: rgba(61, 137, 76, 0.9);
+
+            &__text {
+
+                // text
+                color: rgb(64, 64, 64);
+                font-size: 32px;
+                font-weight: 700;
+
+            }
+
+        }
+
+    }
+
+    &__avg {
+
+        // attributes
+        display: flex;
+
+        // position
+        margin-top: 10px;
+        margin-left: 25px;
+
+        // dimensions
+        height: 40%;
+        width: 90%;
+
+        // structure
+        border-radius: 10px;
+
+        // test
+        // background: rgba(61, 137, 76, 0.9);
+
+        &__text {
+
+            // position
+            margin-top: 15px;
+            margin-left: 25px;
+
+            // text
+            font-size: 28px;
+            font-weight: 700;
+            color: rgb(64, 64, 64);
+
+        }
+
+        &__value {
+
+            // attributes
+            display: flex;
+
+            // dimensions
+            width: 180px;
+
+            // position
+            position: fixed;
+            margin-top: 15px;
+            margin-left: 280px;
+
+            // position content
+            align-items: center;
+            justify-content: center;
+
+            // text
+            font-size: 28px;
+            font-weight: 700;
+
+            // test
+            // background: rgba(61, 137, 76, 0.9);
+
+            &__text {
+
+                // text
+                font-size: 32px;
+                font-weight: 700;
+                color: rgb(64, 64, 64);
+
+            }
+
+        }
+
+    }
+
+}

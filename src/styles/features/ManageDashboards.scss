@@ -1,0 +1,272 @@
+@import '../utils/theme.scss';
+
+.manage-dashboards {
+
+    // overall position & dimensions
+    display: flex;
+    //   flex-direction: column;
+    height: 100vh;
+    width: 1400px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+
+    // test
+    // background: rgba(77, 209, 209, 0.5);
+
+    &__outer {
+
+        // position
+        display: flex;
+        height: 700px;
+        width: 1400px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+
+        // test
+        // background: rgba(133, 58, 150, 0.5);
+
+        &__inner {
+
+            // position
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 1200px;
+            margin: 0 auto;
+            align-items: center;
+            justify-content: center;
+    
+            // test
+            // background: rgba(128, 216, 56, 0.5);
+
+            &__header {
+
+                // position
+                display: flex;
+                margin-top: -2%;
+                margin-bottom: 0%;
+
+                // dimensions
+                width: 100%;
+
+                align-items: center;
+                justify-content: center;
+
+                // test
+                // background: rgba(189, 49, 49, 0.5);
+
+                &__user {
+
+                    // position
+                    // display: flex;
+                    // margin-right: -15%;
+                    position: relative;
+                    left: 390px;
+                    // margin-bottom: 10px;
+
+                    // dimensions
+                    width: 390px;
+
+                    // test
+                    // background: rgba(199, 185, 29, 0.5);
+
+                }
+
+            }
+
+            &__body {
+
+                // position
+                // margin-bottom: 10%;
+                display: flex;
+                flex-direction: column;
+                width: 900px;
+                height: 650px;
+
+                // structure
+                border-radius: 10px;
+
+                // visuals
+                background-color: $primary-color;
+                box-shadow: 5px 5px 10px 2px rgba(124, 124, 124, 0.8);
+
+                &__header {
+
+                    // position
+                    display: flex;
+                    flex-direction: column;
+                    width: 900px;
+                    height: 40px;
+
+                    // structure
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+
+                    // visuals
+                    background-color: rgba(233, 159, 159, 0.8);
+                    // box-shadow: 5px 5px 10px 2px rgba(124, 124, 124, 0.8);
+
+                    &__title {
+
+                        // position
+                        margin-top: 2px;
+                        margin-left: 20px;
+
+                        // text
+                        color:rgba(255, 255, 255, 1);
+                        font-size: 28px;
+                        font-weight: bold;
+                        text-shadow: 0 5px 0.15em rgba(0, 0, 0, 0.1), 0 0.05em 0.1em rgba(0, 0, 0, 0.5);
+
+                    }
+
+                }
+
+                &__list {
+
+                    // attributes
+                    display: flex;
+                    flex-direction: column;
+                    // overflow-y: auto;
+                    user-select: none;
+
+                    // position
+                    margin-top: 15px;
+                    margin-left: 2.5%;
+
+                    // dimensions
+                    height: 90%;
+                    width: 95%;
+
+                    // structure
+                    border-radius: 10px;
+
+                    // poisiton contents
+                    align-items: center;
+                    // justify-content: center;
+
+                    // visuals
+                    background:rgba(255, 255, 255, 0.7);
+
+                    &__header {
+
+                        // attributes
+                        display: flex;
+                        // flex-direction: column;
+                        user-select: none;
+
+                        // dimensions
+                        height: 8%;
+                        width: 100%;
+
+                        // structure
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+
+                        // poisiton contents
+                        align-items: center;
+
+                        // visuals
+                        background:rgba(107, 107, 107, 0.15);
+
+                        &__dashboard {
+
+                            // attributes
+                            display: flex;
+
+                            // position
+                            position: relative;
+                            margin-top: 10px;
+                            margin-left: 60px;
+
+                            // text
+                            font-size: 28px;
+                            font-weight: bold;
+
+                            // visuals
+                            color: rgba(67, 67, 67, 1);
+
+                            // test
+                            // background:rgba(12, 154, 50, 0.7);
+
+                        }
+
+                        &__plans {
+
+                            // attributes
+                            display: flex;
+
+                            // position
+                            position: relative;
+                            margin-top: 10px;
+                            margin-left: 290px;
+
+                            // text
+                            font-size: 28px;
+                            font-weight: bold;
+
+                            // visuals
+                            color: rgba(67, 67, 67, 1);
+
+                            // test
+                            // background:rgba(12, 154, 50, 0.7);
+
+                        }
+
+                        &__actions {
+
+                            // attributes
+                            display: flex;
+
+                            // position
+                            position: relative;
+                            margin-top: 10px;
+                            margin-left: 130px;
+
+                            // text
+                            font-size: 28px;
+                            font-weight: bold;
+
+                            // visuals
+                            color: rgba(67, 67, 67, 1);
+
+                            // test
+                            // background:rgba(12, 154, 50, 0.7);
+
+                        }
+
+                    }
+
+                    &__items {
+
+                        // attributes
+                        display: flex;
+                        flex-direction: column;
+                        overflow-y: auto;
+                        user-select: none;
+
+                        // dimensions
+                        height: 92%;
+                        width: 100%;
+
+                        // structure
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+
+                        // poisiton contents
+                        align-items: center;
+                        // justify-content: center;
+
+                        // visuals
+                        // background:rgba(255, 255, 255, 0.7);
+
+                    }
+
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.3)
+      ),
+      url("./assets/backgrounds/main.jpg");
+    background-size: cover;
+    background-position: initial;
+    background-attachment: fixed;
+
+    // // in case image can't be used
+    // background: linear-gradient(to right, rgba(233, 159, 159, 0.8), rgba(124, 101, 217, 0.5));
+
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}

@@ -1,0 +1,260 @@
+.bs16 {
+
+    // attributes
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+
+    // dimensions
+    height: 600px;
+    width: 240px;
+
+    // structure
+    border-radius: 10px;
+
+    // test
+    // background: rgb(146, 29, 29, 0.9);
+
+    &__overall {
+
+        // attributes
+        display: flex;
+        flex-direction: column;
+
+        // position
+        margin-top: 10px;
+        margin-left: 6px;
+
+        // dimensions
+        height: 13%;
+        width: 95%;
+
+        // position content
+        align-items: center;
+        justify-content: center;
+
+        // structure
+        border-radius: 10px;
+
+        // test
+        // background: rgba(61, 137, 76, 0.9);
+
+        &__text {
+
+            // position
+            margin-top: -8px;
+
+            // text
+            font-size: 24px;
+            font-weight: 700; 
+            color: rgb(64, 64, 64);
+
+        }
+
+        &__value {
+
+            // attributes
+            display: flex;
+
+            // position
+            margin-top: -5px;
+
+            // dimensions
+            height: 40px;
+            width: 200px;
+
+            // position content
+            align-items: center;
+            justify-content: center;
+
+            // structure
+            border-radius: 5px;
+
+            // test
+            background: rgba(255, 255, 255, 0.9);
+
+            &__text {
+
+                // position
+                margin-top: 10px;
+
+                // text
+                color: rgb(65, 65, 65);
+                font-size: 28px;
+                font-weight: 700;
+                text-shadow: 0 4px 0.10em rgba(0, 0, 0, 0.2), 0 0.05em 0.1em rgba(0, 0, 0, 0.1);
+
+            }
+
+        }
+
+    }
+
+    &__mid {
+
+        // attributes
+        display: flex;
+        flex-direction: column;
+
+        // position
+        margin-top: 10px;
+        margin-left: 6px;
+
+        // dimensions
+        height: 20%;
+        width: 95%;
+
+        // position content
+        align-items: center;
+        justify-content: center;
+
+        // structure
+        border-radius: 10px;
+
+        // test
+        // background: rgba(61, 137, 76, 0.9);
+
+        &__text {
+
+            // position
+            // margin-top: -3px;
+
+            // text
+            font-size: 24px;
+            font-weight: 700;
+            color: rgb(64, 64, 64);
+
+        }
+
+        &__value {
+
+            // attributes
+            display: flex;
+
+            // dimensions
+            // height
+            height: 60px;
+            width: 200px;
+
+
+            // position
+            // position: fixed;
+            margin-bottom: 10px;
+            // margin-left: 300px;
+
+            // structure
+            border-radius: 5px;
+
+            // position content
+            align-items: center;
+            justify-content: center;
+
+            // text
+            font-size: 18px;
+            // font-weight: 700;
+
+            // visuals
+            background: rgba(255, 255, 255, 0.8);
+
+            &__text {
+
+                // position
+                margin-top: 5px;
+
+                // text
+                font-size: 28px;
+                font-weight: 700;
+                text-shadow: 0 4px 0.10em rgba(0, 0, 0, 0.2), 0 0.05em 0.1em rgba(0, 0, 0, 0.1);
+
+            }
+
+        }
+
+    }
+
+    &__savings {
+
+        // attributes
+        display: flex;
+        flex-direction: column;
+
+        // position
+        margin-top: 10px;
+        margin-left: 6px;
+
+        // dimensions
+        height: 38.5%;
+        width: 95%;
+
+        // position content
+        align-items: center;
+        justify-content: center;
+
+        // structure
+        border-radius: 10px;
+
+        // test
+        // background: rgba(61, 137, 76, 0.9);
+
+        &__text {
+
+            // text
+            font-size: 24px;
+            font-weight: 700;
+            color: rgb(64, 64, 64);
+
+        }
+
+        &__value {
+
+            // attributes
+            display: flex;
+            flex-direction: column;
+
+            // dimensions
+            // height
+            height: 80px;
+            width: 200px;
+
+
+            // position
+            // position: fixed;
+            margin-bottom: 10px;
+            // margin-left: 300px;
+
+            // structure
+            border-radius: 5px;
+
+            // position content
+            align-items: center;
+            justify-content: center;
+
+            // text
+            font-size: 18px;
+            // font-weight: 700;
+
+            // visuals
+            background: rgba(255, 255, 255, 0.8);
+
+            &__label {
+
+                // text
+                font-size: 18px;
+                font-weight: 700;
+
+            }
+
+            &__text {
+
+                // text
+                font-size: 28px;
+                font-weight: 700;
+                text-shadow: 0 4px 0.10em rgba(0, 0, 0, 0.2), 0 0.05em 0.1em rgba(0, 0, 0, 0.1);
+
+            }
+
+        }
+
+    }
+
+}

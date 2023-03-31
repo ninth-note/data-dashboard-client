@@ -1,0 +1,35 @@
+@import '../../utils/theme.scss';
+
+.formTextArea{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+
+    // set a fixed height for the textarea
+    height: 150px;
+
+    // prevent user from resizing the textarea
+    resize: none;
+
+    &__label {
+        font-size: 24px;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.7);
+    }
+
+    &__textarea {
+        padding: 15px;
+        margin: 10px 0px;
+        border-radius: 5px;
+        border: 1px solid gray;
+
+        // make the textarea fill the width of the parent element
+        width: 100%;
+
+        // set a static vertical height for the textarea
+        height: 100%;
+
+        // prevent user from resizing the textarea
+        resize: none;
+    }
+}

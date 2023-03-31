@@ -1,0 +1,81 @@
+@import '../../utils/theme.scss';
+
+.name-tag{
+    display: flex;
+    height: 80px;
+    width: 400px;
+    align-items: center;
+
+    // test
+    // background: rgba(255, 255, 255, 0.8);
+
+    &__name-field {
+
+        // attributes
+        user-select: none;
+
+        // position
+        display: flex;
+        align-items: center;
+
+        // structure
+        height: 60%;
+        width: 70%;
+        border-radius: 30px;
+
+        // visuals
+        background: rgba(255, 255, 255, 0.8);
+
+        &__name {
+
+            // position
+            margin: 0 auto;
+
+            // text
+            font-size: 32px;
+            font-weight: bold;
+            color: $user;
+
+        }
+    }
+
+    &__icon-field {
+
+        // position
+        display: flex;
+        margin-left: 8px;
+        align-items: center;
+
+        // structure
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+
+        // visuals
+        background: $secondary-color;
+
+        &__icon {
+
+            // position
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            border: none;
+            background: none;
+
+            // dimensions
+            height: 70%;
+            width: 70%;
+
+            // text
+            font-size: 60px;
+        }
+        
+        &:hover {
+
+            // visuals
+            background: $tertiary-color;
+
+        }
+    }
+}

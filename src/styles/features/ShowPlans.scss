@@ -1,0 +1,392 @@
+@import '../utils/theme.scss';
+
+.plans {
+
+    // overall position & dimensions
+    display: flex;
+    //   flex-direction: column;
+    height: 100vh;
+    width: 1400px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+
+    // test
+    // background: rgba(77, 209, 209, 0.5);
+
+    &__outer {
+
+        // position
+        display: flex;
+        height: 700px;
+        width: 1400px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+
+        // test
+        // background: rgba(133, 58, 150, 0.5);
+
+        &__left {
+
+            //position
+            position: relative;
+            top: 30px;
+            left: 110px;
+
+            // dimensions
+            height: 300px;
+            width: 2%;
+
+            // structure
+            border: none;
+            border-radius: 20px;
+
+            // visuals
+            background-color: $secondary-color;
+
+        }
+
+        &__inner {
+
+            // position
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 1200px;
+            margin: 0 auto;
+            align-items: center;
+            justify-content: center;
+    
+            // test
+            // background: rgba(128, 216, 56, 0.5);
+
+            &__header {
+
+                // position
+                display: flex;
+                margin-top: -2%;
+                margin-bottom: 0%;
+
+                // dimensions
+                width: 100%;
+
+                align-items: center;
+                justify-content: center;
+
+                // test
+                // background: rgba(189, 49, 49, 0.5);
+
+                &__title {
+
+                    // position
+                    display: flex;
+                    // margin-left: 70px;
+                    position: relative;
+                    left: 40px;
+
+                    // dimensions
+                    height: 60%;
+                    width: 800px;
+
+                    // structure
+                    border-radius: 20px;
+
+                    // contents positioning
+                    align-items: center;
+                    justify-content: center;
+
+                    // visuals
+                    background: $tertiary-color;
+
+                    &__text {
+
+                        // position
+                        margin-top: 5px;
+                        margin-left: 30px;
+        
+                        // visuals (text)
+                        font-weight: 550;
+                        font-size: 30px;
+                        color: rgba(255, 255, 255, 1);
+                        text-shadow: 0 5px 0.15em rgba(0, 0, 0, 0.5), 0 0.05em 0.1em rgba(0, 0, 0, 0.5);
+        
+                        // test
+                        // background: rgba(199, 185, 29, 0.5);
+
+                    }
+
+                }
+
+                &__user {
+
+                    // position
+                    // display: flex;
+                    // margin-right: -15%;
+                    position: relative;
+                    left: 50px;
+
+                    // dimensions
+                    width: 360px;
+
+                    // test
+                    // background: rgba(199, 185, 29, 0.5);
+
+                }
+
+            }
+
+            // &__body {
+
+            //     // position
+            //     // margin-bottom: 10%;
+            //     display: flex;
+            //     flex-direction: column;
+            //     width: 1100px;
+            //     height: 700px;
+
+            //     // structure
+            //     border-radius: 10px;
+
+            //     // visuals
+            //     background-color: $primary-color;
+            //     box-shadow: 5px 5px 10px 2px rgba(124, 124, 124, 0.8);
+            // }
+
+            &__body {
+
+                // position
+                // margin-bottom: 10%;
+                display: flex;
+                flex-direction: column;
+                width: 1100px;
+                height: 700px;
+
+                // structure
+                border-radius: 10px;
+
+                // visuals
+                background-color: $primary-color;
+                box-shadow: 5px 5px 10px 2px rgba(124, 124, 124, 0.8);
+
+                &__header {
+
+                    // position
+                    display: flex;
+                    flex-direction: column;
+                    width: 1100px;
+                    height: 40px;
+
+                    // structure
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+
+                    // visuals
+                    background-color: rgba(233, 159, 159, 0.8);
+                    // box-shadow: 5px 5px 10px 2px rgba(124, 124, 124, 0.8);
+
+                    &__title {
+
+                        // position
+                        margin-top: 2px;
+                        margin-left: 20px;
+
+                        // text
+                        color:rgba(255, 255, 255, 1);
+                        font-size: 28px;
+                        font-weight: bold;
+                        text-shadow: 0 5px 0.15em rgba(0, 0, 0, 0.1), 0 0.05em 0.1em rgba(0, 0, 0, 0.5);
+
+                    }
+
+                }
+
+                &__list {
+
+                    // attributes
+                    display: flex;
+                    flex-direction: column;
+                    // overflow-y: auto;
+                    user-select: none;
+
+                    // position
+                    margin-top: 12px;
+                    margin-left: 2.5%;
+
+                    // dimensions
+                    height: 90%;
+                    width: 95%;
+
+                    // structure
+                    border-radius: 10px;
+
+                    // poisiton contents
+                    align-items: center;
+                    // justify-content: center;
+
+                    // visuals
+                    background:rgba(255, 255, 255, 0.7);
+
+                    &__header {
+
+                        // attributes
+                        display: flex;
+                        // flex-direction: column;
+                        user-select: none;
+
+                        // dimensions
+                        height: 8%;
+                        width: 100%;
+
+                        // structure
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+
+                        // poisiton contents
+                        align-items: center;
+                        // justify-content: center;
+
+                        // visuals
+                        background:rgba(107, 107, 107, 0.15);
+
+                        &__plan {
+
+                            // attributes
+                            display: flex;
+
+                            // position
+                            position: relative;
+                            margin-top: 10px;
+                            margin-left: 155px;
+
+                            // text
+                            font-size: 28px;
+                            font-weight: bold;
+
+                            // visuals
+                            color: rgba(67, 67, 67, 1);
+
+                            // test
+                            // background:rgba(12, 154, 50, 0.7);
+
+                        }
+
+                        &__graph {
+
+                            // attributes
+                            display: flex;
+
+                            // position
+                            position: relative;
+                            margin-top: 10px;
+                            margin-left: 232px;
+
+                            // text
+                            font-size: 28px;
+                            font-weight: bold;
+
+                            // visuals
+                            color: rgba(67, 67, 67, 1);
+
+                            // test
+                            // background:rgba(12, 154, 50, 0.7);
+
+                        }
+
+                        &__status {
+
+                            // attributes
+                            display: flex;
+
+                            // position
+                            position: relative;
+                            margin-top: 10px;
+                            margin-left: 154px;
+
+                            // text
+                            font-size: 28px;
+                            font-weight: bold;
+
+                            // visuals
+                            color: rgba(67, 67, 67, 1);
+
+                            // test
+                            // background:rgba(12, 154, 50, 0.7);
+
+                        }
+
+                        &__actions {
+
+                            // attributes
+                            display: flex;
+
+                            // position
+                            position: relative;
+                            margin-top: 10px;
+                            margin-left: 140px;
+
+                            // text
+                            font-size: 28px;
+                            font-weight: bold;
+
+                            // visuals
+                            color: rgba(67, 67, 67, 1);
+
+                            // test
+                            // background:rgba(12, 154, 50, 0.7);
+
+                        }
+
+                    }
+
+                    &__items {
+
+                        // attributes
+                        display: flex;
+                        flex-direction: column;
+                        overflow-y: auto;
+                        user-select: none;
+
+                        // dimensions
+                        height: 92%;
+                        width: 100%;
+
+                        // structure
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+
+                        // poisiton contents
+                        align-items: center;
+                        // justify-content: center;
+
+                        // visuals
+                        // background:rgba(255, 255, 255, 0.7);
+
+                    }
+
+                }
+
+            }
+        }
+
+        &__right {
+
+            //position
+            position: relative;
+            top: 30px;
+            right: 110px;
+
+            // dimensions
+            height: 300px;
+            width: 2%;
+
+            // structure
+            border: none;
+            border-radius: 20px;
+
+            // visuals
+            background-color: $secondary-color;
+
+        }
+    }
+}

@@ -1,0 +1,148 @@
+@import '../utils/theme.scss';
+
+.grid-items {
+
+    user-select: none;
+
+    // attributes
+    display: flex;
+    flex-direction: column;
+
+    // position
+    // margin: 0 auto;
+
+    // dimensions
+    height: 100vh;
+    width: 100vw;
+
+    // structure
+    border-radius: 10px;
+
+    // positioning contents
+    align-items: center;
+    // justify-content: center;
+
+
+    // visuals
+    background: rgba(255, 255, 255, 0.7);
+
+    &__header {
+
+        // attributes
+        display: flex;
+
+        // dimensions
+        height: 30px;
+        width: 100%;
+
+        // structure
+        // border-radius: 10px;
+
+        // positioning contents
+        align-items: center;
+        justify-content: center;
+
+
+        // test
+        // background: rgba(143, 230, 14, 0.5);
+
+        &__button {
+
+            // attributes
+            display: flex;
+            flex-direction: column;
+
+            // position
+            // position: relative;
+            // right: 35%;
+
+            // dimensions
+            height: 70%;
+            width: 50px;
+
+            // structure
+            border: none;
+            border-radius: 20px;
+            box-shadow: 3px 1px 5px rgb(0, 0, 0);
+
+            // positioning contents
+            align-items: center;
+            justify-content: center;
+
+            // visuals
+            background: rgba(235, 73, 9, 0.5);
+        
+            &:hover {background: rgba(235, 73, 9, 0.9);}
+        
+            &:active {
+        
+                background-color: rgba(235, 73, 9, 0.5);
+                box-shadow: 1px 0px rgb(113, 113, 113);
+                transform: translateY(4px);
+        
+            }
+
+            &__text {
+
+                // position
+                position: relative;
+                top: 2.5px;
+
+                // text
+                color:rgb(0, 0, 0);
+
+            }
+
+        }
+
+        &__label {
+
+            // attributes
+            display: flex;
+            flex-direction: column;
+
+            // position
+            // position: relative;
+            // right: 35%;
+
+            // dimensions
+            height: 100%;
+            width: 90%;
+
+            // positioning contents
+            align-items: center;
+            justify-content: center;
+
+            // text
+            font-size: 18px;
+
+            // test
+            // background: rgba(255, 255, 255, 0.8);
+
+        }
+
+    }
+
+    &__contents {
+
+        // attributes
+        display: flex;
+
+        // dimensions
+        height: 100%;
+        width: 100%;
+
+        // structure
+        // border-radius: 10px;
+
+        // positioning contents
+        align-items: center;
+        justify-content: center;
+
+
+        // test
+        // background: rgba(14, 226, 250, 0.5);
+
+    }
+
+}

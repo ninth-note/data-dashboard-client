@@ -1,0 +1,104 @@
+// @import '../../utils/theme.scss';
+
+// .build-header {
+
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+
+//     // overall position
+//     display: flex;
+//     height: 70px;
+//     width: 100%;
+//     margin: 0 auto;
+
+//     &__left {
+
+//         // dimensions
+//         height: 100%;
+//         width: 50%;
+
+//         // visuals
+//         background-color: rgba(253, 216, 135, 0.5);
+
+//         &__dashboard {
+
+//             // position
+//             display: flex;
+//             align-items: center;
+//             margin-left: 5%;
+    
+    
+//             // structure
+//             height: 45px;
+//             width: 700px;
+//             border-radius: 20px;
+    
+//             // visuals
+//             background: $tertiary-color;
+    
+//             &__name {
+    
+//                 // position
+//                 // display: flex;
+//                 // align-items: center;
+//                 margin: 0 auto;
+    
+//                 // visuals
+//                 color: rgba(255, 255, 255, 1);
+//                 text-shadow: 0 5px 0.30em rgba(0, 0, 0, 0.5), 0 0.05em 0.1em rgba(0, 0, 0, 0.5);
+    
+//             }
+//         }
+
+//     }
+
+//     &__right {
+
+//         // dimensions
+//         height: 100%;
+//         width: 50%;
+
+//         // visuals
+//         background-color: rgba(146, 246, 148, 0.5);
+
+//         &__user {
+
+//             position: fixed;
+//             right: 0;
+
+//             // position
+//             display: flex;
+//             align-items: center;
+//             margin-right: 20%;
+    
+    
+//             // structure
+//             height: 45px;
+//             width: 700px;
+//             border-radius: 20px;
+    
+//             // visuals
+//             background: $tertiary-color;
+    
+//             &__name {
+    
+//                 // position
+//                 // display: flex;
+//                 // align-items: center;
+//                 margin: 0 auto;
+    
+//                 // visuals
+//                 color: rgba(255, 255, 255, 1);
+//                 text-shadow: 0 5px 0.30em rgba(0, 0, 0, 0.5), 0 0.05em 0.1em rgba(0, 0, 0, 0.5);
+    
+//             }
+//         }
+
+//     }
+
+    
+
+    
+
+// }

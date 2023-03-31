@@ -1,0 +1,152 @@
+@import '../utils/theme.scss';
+
+.dashboard-row {
+
+    // attributes
+    display: flex;
+    user-select: none;
+
+    // position
+    margin-top: 15px;
+
+    // dimensions
+    height: 70px;
+    width: 90%;
+
+    // structure
+    border-radius: 20px;
+
+
+    // visuals
+    background: rgb(41, 218, 227, 0.3);
+
+    &__title {
+
+        // attributes
+        display: flex;
+        user-select: none;
+
+        // position
+        // margin-top: 15px;
+
+        // dimensions
+        height: 70px;
+        width: 300px;
+
+
+        // test
+        // background: rgba(35, 196, 35, 0.7);
+
+        &__text {
+
+            // position
+            margin-top:17px;
+            margin-left: 40px;
+            
+
+            // text
+            font-size: 32px;
+
+            // visuals
+
+
+        }
+
+    }
+
+    &__plans {
+
+        // attributes
+        display: flex;
+        user-select: none;
+
+        // position
+        margin-left: 120px;
+
+        // dimensions
+        height: 70px;
+        width: 140px;
+
+        // position contents
+        align-items: center;
+        justify-content: center;
+
+
+        // test
+        // background: rgba(180, 183, 26, 0.7);
+
+        &__text {
+
+            // position
+            margin-top: 10px;
+
+            // text
+            font-size: 32px;
+
+            // visuals
+            
+
+        }
+
+    }
+
+    &__action {
+
+        // attributes
+        display: flex;
+        user-select: none;
+
+        // position
+        margin-left: 120px;
+
+        // dimensions
+        height: 70px;
+        width: 50px;
+
+        // position contents
+        align-items: center;
+        justify-content: center;
+
+
+        // test
+        // background: rgba(157, 28, 136, 0.7);
+
+        &__icon {
+
+            // // dimensions
+            width: 60px;
+
+            // // structure
+            // border: none;
+            // border-radius: 30px;
+
+            // // text
+            font-size: 32px;
+
+            // // visuals
+            // background: none;
+
+            // text
+            color:rgb(75, 75, 75);
+            font-size: 32px;
+
+            // animation
+            transition: color 0.5s ease-out;
+
+            &:hover {
+                color: rgba(218, 6, 6, 0.8);
+            }
+
+            &:active {
+
+                font-size: 30px;
+        
+            }
+            
+
+        }
+
+    }
+
+
+}

@@ -1,0 +1,568 @@
+@import '../utils/theme.scss';
+
+.build {
+
+    // overall position & dimensions
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 1400px;
+    margin: 0 auto;
+    justify-content: center;
+    overflow-y: auto;
+
+    // test
+    // background: rgba(77, 209, 209, 0.5);
+
+    &__header {
+
+        // position
+        display: flex;
+        margin-bottom: 0%;
+
+        // dimensions
+        height: 60px;
+        width: 100%;
+
+        align-items: center;
+        justify-content: center;
+
+        // test
+        // background: rgba(189, 49, 49, 0.5);
+
+        &__title {
+
+            // position
+            display: flex;
+            position: relative;
+            left: 0px;
+
+            // dimensions
+            height: 60%;
+            width: 75%;
+
+            // structure
+            border-radius: 20px;
+
+            // contents positioning
+            align-items: center;
+            justify-content: center;
+
+            // visuals
+            background: $tertiary-color;
+
+            &__text {
+
+                // position
+                margin-top: 5px;
+
+                // visuals (text)
+                font-weight: 550;
+                font-size: 20px;
+                color: rgba(255, 255, 255, 1);
+                text-shadow: 0 5px 0.15em rgba(0, 0, 0, 0.5), 0 0.05em 0.1em rgba(0, 0, 0, 0.5);
+
+                // test
+                // background: rgba(199, 185, 29, 0.5);
+
+            }
+
+        }
+
+        &__complete {
+
+            // attributes
+            user-select: none; 
+
+            // position
+            display: flex;
+            // margin-right: -15%;
+            position: relative;
+            left: 35px;
+
+            // dimensions
+            height: 60%;
+            width: 20%;
+
+            // positioning contents
+            align-items: center;
+            justify-content: center;
+
+            // structure (padding: top, right, bottom, left) 
+            padding: 10px 60px 10px 60px;
+            border-radius: 20px;
+            border: none;
+
+            // test
+            background: rgba(64, 222, 11, 0.5);
+
+            &__text {
+
+                // position
+                margin: 0 auto;
+                // margin-top: 5px;
+
+                // visuals (text)
+                font-weight: 550;
+                font-size: 20px;
+                color: rgba(255, 255, 255, 1);
+                text-shadow: 0 5px 0.15em rgba(0, 0, 0, 0.5), 0 0.05em 0.1em rgba(0, 0, 0, 0.5);
+
+                // test
+                // background: rgba(199, 185, 29, 0.5);
+
+            }
+
+            &:hover {background-color: rgba(255, 255, 255, 0.3)}
+
+            &:active {
+
+                background: rgba(64, 222, 11, 0.5);
+
+                // background-color: rgba(195, 253, 159, 0.5);
+                // box-shadow: 1px 0px rgb(113, 113, 113);
+                // transform: translateY(4px);
+
+            }
+        }
+
+    }
+
+    &__main {
+
+        // attributes
+        display: flex;;
+
+        // position
+        margin: 0 auto;
+        
+        // dimensions
+        height: 100vh;
+        width: 100%;
+        
+        // positioning contents
+        justify-content: center;
+        overflow-y: auto;
+
+        // test
+        // background: rgba(246, 17, 5, 1);
+        
+
+        &__frame {
+
+            // position
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 1125px;
+            align-items: center;
+            justify-content: center;
+
+            // test
+            // background: rgba(133, 58, 150, 0.5);
+
+            &__grid {
+
+                // attributes
+                display: flex;
+                flex-direction: column;
+                overflow-y: auto;
+
+                // position
+                
+                // dimensions
+                height: 670px;
+                width: 1100px;
+
+                // structure
+                border-radius: 10px;
+
+                // visuals
+                background-color: $primary-color;
+                box-shadow: 5px 5px 10px 2px rgba(124, 124, 124, 0.8);
+            }
+        }
+
+        &__components {
+
+            // attributes
+            user-select: none; 
+            display: flex;
+            flex-direction: column;
+            // margin-top: 0.3%;
+
+            // dimensions
+            height: 100%;
+            width: 275px;
+
+            // structure
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+            // test
+            // background: rgba(71, 255, 4, 0.8);
+
+            &__header {
+
+                // attributes
+                display: flex;
+                flex-direction: column;
+
+                // dimensions
+                height: 50px;
+                width: 100%;
+
+                // structure
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+
+                // positioning contents
+                align-items: center;
+                justify-content: center;
+
+                // text
+                font-weight: 550;
+                font-size: 20px;
+                color: rgba(255, 255, 255, 1);
+                text-shadow: 0 5px 0.15em rgba(0, 0, 0, 0.5), 0 0.05em 0.1em rgba(0, 0, 0, 0.5);
+
+                // visulas
+                background-color: $secondary-color;
+
+            }
+
+            &__body {
+
+                // attributes
+                display: flex;
+                flex-direction: column;
+                overflow-y: auto;
+
+                // dimensions
+                height: 100%;
+                width: 100%;
+
+                // positioning contents
+                align-items: center;
+                justify-content: center;
+
+                // visulas
+                background-color: $primary-color;
+
+            }
+
+            &__footer {
+
+                // attributes
+                display: flex;
+
+                // dimensions
+                height: 50px;
+                width: 100%;
+
+                // text
+                font-weight: 550;
+                font-size: 20px;
+                color: rgba(255, 255, 255, 1);
+                text-shadow: 0 5px 0.15em rgba(0, 0, 0, 0.5), 0 0.05em 0.1em rgba(0, 0, 0, 0.5);
+
+                // visulas
+                background-color: $secondary-color;
+
+                &__title {
+
+                    // attributes
+                    display: flex;
+
+                    // dimensions
+                    height: 100%;
+                    width: 100px;
+
+                    // positioning contents
+                    align-items: center;
+                    justify-content: center;
+
+                    // test
+                    // background: rgba(241, 8, 8, 0.5);
+
+                    &__text {
+
+                        // position
+                        margin-top: 5px;
+                        margin-left: 15px;
+    
+                        // text
+                        font-size: 26px;
+    
+                    }
+
+                }
+
+                &__theme {
+
+                    // attributes
+                    display: flex;
+
+                    // dimensions
+                    height: 100%;
+                    width: 125px;
+
+                    // positioning contents
+                    align-items: center;
+
+                    // test
+                    // background: rgba(247, 7, 227, 0.5);
+
+                    &__palette {
+
+                        // attributes
+                        display: flex;
+
+                        // position
+                        margin-left: 20px;
+
+                        // structure
+                        border: solid;
+
+                        // dimensions
+                        height: 70%;
+                        width: 70px;
+    
+                        // test
+                        // background: rgba(255, 255, 255, 1);
+
+                        &__color1 {
+    
+                            // dimensions
+                            height: 100%;
+                            width: 25%;
+        
+                            // test
+                            background: rgb(255, 255, 255);
+        
+                        }
+
+                        &__color2 {
+    
+                            // dimensions
+                            height: 100%;
+                            width: 25%;
+        
+                            // test
+                            background: rgb(255, 255, 255);
+        
+                        }
+
+                        &__color3 {
+    
+                            // dimensions
+                            height: 100%;
+                            width: 25%;
+        
+                            // test
+                            background: rgb(255, 255, 255);
+        
+                        }
+
+                        &__color4 {
+    
+                            // dimensions
+                            height: 100%;
+                            width: 25%;
+        
+                            // test
+                            background: rgb(255, 255, 255);
+        
+                        }
+    
+                    }
+
+                }
+
+                &__button {
+
+                    // attributes
+                    display: flex;
+
+                    // dimensions
+                    height: 100%;
+                    width: 50px;
+
+                    // positioning contents
+                    align-items: center;
+                    justify-content: center;
+
+                    // test
+                    // background: rgba(9, 196, 9, 0.5);
+
+                    &__icon {
+
+                        // position
+                        // margin-top: 10px;
+
+                        // text
+                        font-size: 35px;
+                        // color: rgb(255, 255, 255)
+
+                        // animation
+                        transition: color 0.5s ease-out;
+
+                        &:hover {
+                            color: rgba(0, 0, 0, 0.8);
+                        }
+
+                        &:active {
+        
+                            font-size: 30px;
+                    
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+    }
+
+    &__modal {
+
+        // attributes
+        display: flex;
+        flex-direction: column;
+        user-select: none;
+
+        // position
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        // dimensions
+        height: 40vh;
+        width: 75vh;
+
+        // structure
+        border-radius: 8vh;
+        border: 0.7vh solid rgb(154, 144, 193);
+
+        // position contents
+        align-items: center;
+        justify-content: center;
+
+        // visuals
+        background-color: rgba(233, 159, 159, 0.8); //rgb(255, 255, 255)
+        // background: linear-gradient(
+        //     to bottom, 
+        //     rgba(179, 227, 226, 0.8),
+        //     rgba(240, 163, 188, 1),
+        // );
+
+        &__title {
+
+            // position
+            position: absolute;
+            top: 8vh;
+            left: 13.5vh;
+
+            // dimensions
+            width: 50vh;
+
+            // text
+            font-size: 5vh;
+
+            // visuals
+            // color: rgb(255, 255, 255);
+            color:rgba(0, 0, 0, 1);
+
+            // test
+            // background: rgba(178, 33, 14, 1);
+
+        }
+
+        &__buttons {
+
+            // attributes
+            display: flex;
+
+            // position
+            position: fixed;
+            top: 20vh;
+
+            // dimensions
+            height: 15vh;
+            width: 70vh;
+
+            // position contents
+            align-items: center;
+            justify-content: center;
+
+            // test
+            // background: rgb(208, 17, 185);
+
+            &__close {
+
+                // position
+                position: relative;
+                left: -2vh;
+
+                // dimensions
+                height: 10vh;
+                width: 25vh;
+
+                //structure
+                border-radius: 4vh;
+                border: 0.7vh solid rgb(154, 144, 193);
+
+                // text
+                font-size: 6vh;
+                font-weight: 500;
+
+                // visuals
+                background-color: rgba(255, 255, 255, 0.5);
+                color: rgba(67, 67, 67, 1); // rgba(67, 67, 67, 0.6)
+
+                &:hover {
+                    // background: rgba(255, 255, 255, 1);
+                    font-size: 5.5vh;
+                    color: rgba(178, 33, 14, 1);
+                    border: 0.7vh solid rgba(178, 33, 14, 0.3);
+                }
+
+            }
+
+            &__proceed {
+
+                // position
+                position: relative;
+                left: 2vh;
+
+                // dimensions
+                height: 10vh;
+                width: 25vh;
+
+                //structure
+                border-radius: 4vh;
+                border: 0.7vh solid rgb(154, 144, 193);
+
+                // text
+                font-size: 6vh;
+                font-weight: 500;
+
+                // visuals
+                background-color: rgba(255, 255, 255, 0.5);
+                color: rgba(67, 67, 67, 1); // rgba(67, 67, 67, 0.6)
+
+                &:hover {
+                    // background: rgba(159, 245, 106, 0.1);
+                    font-size: 5.5vh;
+                    color: rgba(77, 161, 26, 1);
+                    border: 0.7vh solid rgba(77, 161, 26, 0.3);
+                }
+
+            }
+
+        }
+    }
+}

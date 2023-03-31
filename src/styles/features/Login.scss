@@ -1,0 +1,360 @@
+@import '../utils/theme.scss';
+
+// body.login-background {
+//     // background: linear-gradient(
+//     //     to bottom, 
+//     //     #F5F5F5,
+//     //     rgb(81, 52, 109, 0.6),
+//     // );
+//     // background-size: cover;
+//     // background-position: initial;
+//     // background-attachment: fixed;
+//     // background: rgb(109, 101, 122);
+// }
+
+.login-page {
+
+    // attributes
+    user-select: none;
+    display: flex;
+
+    // dimensions
+    height: 100vh;
+    width: 100%;
+
+    // handle contents within
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+
+    // test
+    // background: rgba(61, 248, 139, 1);
+
+    &__frame {
+
+        // position
+        display: flex;
+
+        // dimensions
+        height: 95%;
+        width: 96%;
+
+        // structure
+        border-radius: 26px;
+        // border: solid rgba(255, 255, 255, 1);
+
+        // handle contents within
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+
+        &__form {
+
+            // position
+            display: flex;
+            
+            // dimensions
+            height: 500px;
+            width: 900px;
+            min-height: 500px;
+
+            // structure
+            border-radius: 30px;
+
+            // handle contents within
+            // flex-direction: column;
+            margin: 0 auto;
+            align-items: center;
+            // justify-content: center;
+
+            // visuals
+            background: linear-gradient(
+                rgba(255, 255, 255, 0.2),
+                rgba(255, 255, 255, 0.1)
+            ),
+            url("../../assets/backgrounds/main.jpg");
+            background-size: cover;
+            background-position: initial;
+            background-attachment: fixed;
+            box-shadow: 5px 5px 10px 2px rgb(255, 255, 255);
+
+            &__login {
+
+                // position
+                position: relative; /* add this to make ::after position relative to this */
+                display: flex;
+
+                // dimensions
+                height: 100%;
+                width: 50%;
+
+                // structure
+                border-top-left-radius: 30px;
+                border-bottom-left-radius: 30px;
+
+                // handle contents within
+                flex-direction: column;
+                // align-items: center;
+                // justify-content: center;
+
+                // visuals
+                background: rgba(255, 255, 255, 0.9);
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: -200px;
+                    bottom: 0;
+                    width: 200px;
+                    border-top-right-radius: 200px;
+                    border-bottom-right-radius: 200px;
+                    background: rgba(255, 255, 255, 0.9);
+                }
+
+                &__contents {
+
+                    // position
+                    display: flex;
+                    
+
+                    // dimensions
+                    height: 100%;
+                    width: 100%;
+
+                    // handle contents within
+                    flex-direction: column;
+                    // align-items: center;
+                    // justify-content: center;
+
+
+                    // test
+                    // background: rgb(230, 67, 67);
+
+                    &__header {
+
+                        // position
+                        display: flex;
+                        // margin: 0 auto;
+
+                        // dimensions
+                        height: 15%;
+                        width: 100%;
+
+                        // handle contents within
+                        // flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        // text
+                        font-size: 32px;
+                        font-weight: bold;
+
+                        // test
+                        // background: rgba(61, 248, 139, 0.1);
+
+                        &__text {
+
+                            // position
+                            display: flex;
+                            margin-left: -100px;
+                            margin-top: 10%;
+                            // top:
+                            // margin: 0 auto;
+
+                            // text
+                            font-size: 30px;
+                            font-weight: bold;
+
+                        }
+                        
+                    }
+
+                    &__body {
+
+                        // dimensions
+                        height: 100%;
+                        width: 100%;
+
+                        // handle contents within
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        // test
+                        // background: rgba(209, 51, 51, 0.1);
+
+                        &__inputs {
+
+                            // position
+                            display: flex;
+                            margin-top: 10%;
+                            margin-left: 40%;
+
+                            // dimensions
+                            height: 50%;
+                            width: 70%;
+
+                            // handle contents within
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+
+                            // test
+                            // background: rgba(110, 140, 29, 0.3);
+
+                            &__userlabel {
+
+                                // position
+                                display: flex;
+                                margin-right: 180px;
+                                margin-bottom: 2px;
+
+                                // text
+                                font-size: 16px;
+                                color: rgba(0, 0, 0, 0.60);
+
+                            }
+
+                            &__userinput {
+
+                                // position
+                                display: flex;
+                                margin-right: 26px;
+
+                                // dimensions
+                                width: 250px;
+
+                                // structure
+                                padding: 10px 0px 10px 40px;
+                                border-radius: 26px;
+                                border: 0.01rem solid;
+
+                            }
+
+                            &__pwdlabel {
+
+                                // position
+                                display: flex;
+                                margin-top: 10px;
+                                margin-right: 180px;
+                                margin-bottom: 2px;
+
+                                // text
+                                font-size: 16px;
+                                color: rgba(0, 0, 0, 0.60);
+
+                            }
+
+                            &__pwdinput {
+
+                                // position
+                                display: flex;
+                                margin-right: 26px;
+
+                                // dimensions
+                                width: 250px;
+
+                                // structure
+                                padding:10px 0px 10px 40px;
+                                border-radius: 26px;
+                                border: 0.01rem solid;
+                                
+                            }
+
+                            &__errmsg {
+
+                                // position
+                                display: flex;
+                                margin-top: 10px;
+                                margin-right: 20px;
+
+                                //text
+                                font-size: 20px;
+                                font-weight: 700;
+                                color:rgba(237, 8, 8, 1)
+
+                            }
+
+
+                        }
+
+                        &__button {
+
+                            // position
+                            display: flex;
+                            margin-top: 0%;
+                            margin-left: 50%;
+
+                            // dimensions
+                            height: 65px;
+                            width: 186px;
+
+                            // handle contents within
+                            align-items: center;
+                            justify-content: center;
+                            
+                            // structure
+                            border-radius: 26px;
+
+                            // visuals
+                            background: $secondary-color;
+                            color: #FFFFFF;
+
+                            &__text {
+
+                                // position
+                                margin-top: 8px;
+
+                                // text
+                                font-size: 32px;
+                                font-weight: bold;
+
+                            }
+                        }
+
+                    }
+
+                }
+
+            }
+
+            &__logo {
+
+                // position
+                margin-top: -380px;
+                margin-left: 35%;
+
+                // circle
+                box-shadow: 0px 0.05em rgba(0, 0, 0, 0.25);
+                background-color: #2C2C2C;
+                border-radius: 50%;
+                height: 60px;
+                width: 60px;
+                
+                &__text {
+
+                    // position
+                    margin-top: 10px;
+
+                    // text
+                    font-size: 35px;
+                    font-weight: 100;
+                    color:rgba(255, 255, 255, 1);
+                    text-shadow: 0px 0.05em rgba(0, 0, 0, 0.25);
+
+                }
+
+            }
+
+        }
+
+    }
+
+    
+
+    
+
+}
