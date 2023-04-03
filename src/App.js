@@ -53,7 +53,6 @@ function App() {
 
             {/* Public Routes */}
             <Route index element={<Login />} />
-            {/* <Route path="/login" element={<Beta />} /> */}
             {/* End Public Routes */}
 
             {/* Protected Routes */}
@@ -82,8 +81,8 @@ function App() {
 
                             <Route path="settings" element={<BasicLayout />}>
                                 <Route index element={<Settings />} />
-                                <Route element={<RequirePrivileges allowedRoles={[...Object.values(control)]} />}>
-                                    <Route path="manage-dashboards" element={<ManageDashboards />} />
+                                <Route path="manage-dashboards" element={<ManageDashboards />} />
+                                <Route element={<RequirePrivileges allowedRoles={[...Object.values(control)]} />}>   
                                     <Route path="users" element={<ShowUsers />}/>
                                     <Route path="create-user" element={<CreateUser />}/>
                                     <Route path="edit-user" element={<EditUser />}/>

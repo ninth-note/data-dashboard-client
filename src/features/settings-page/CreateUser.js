@@ -84,47 +84,41 @@ const CreateUser = () => {
 
                         <form className="create-user__outer__inner__body__form" onSubmit={onCreate}>
 
-                            <div className='create-user__outer__inner__body__form__contents'>
-
-                                <div className='create-user__outer__inner__body__form__contents__username'>
-                                    <label className='create-user__outer__inner__body__form__contents__username__label'>Username:</label>
+                                <div className='create-user__outer__inner__body__form__username'>
+                                    <label className='create-user__outer__inner__body__form__username__label'>Username:</label>
                                     <input 
-                                        className='create-user__outer__inner__body__form__contents__username__box'
+                                        className='create-user__outer__inner__body__form__username__box'
                                         type="text"
                                         id="username"
                                         name="username"
                                         value={username}
                                         onChange={onUsernameChange}
-                                        placeholder="username"
                                         autoComplete="off"
                                         required
                                     />
                                 </div>
 
-                                <div className='create-user__outer__inner__body__form__contents__password'>
-                                    <label className='create-user__outer__inner__body__form__contents__password__label'>Password:</label>
+                                <div className='create-user__outer__inner__body__form__password'>
+                                    <label className='create-user__outer__inner__body__form__password__label'>Password:</label>
                                     <input 
-                                        className='create-user__outer__inner__body__form__contents__password__box'
+                                        className='create-user__outer__inner__body__form__password__box'
                                         type="password"
                                         id="password"
                                         name="password"
                                         value={password}
                                         onChange={onPasswordChange}
-                                        placeholder="password"
                                         autoComplete="off"
                                         required
                                     />
                                 </div>
 
-                                <div className='create-user__outer__inner__body__form__contents__role'>
-                                    <label className='create-user__outer__inner__body__form__contents__role__label'>Specify Role:</label>
+                                <div className='create-user__outer__inner__body__form__role'>
+                                    <label className='create-user__outer__inner__body__form__role__label'>Specify Role:</label>
                                     <select
-                                        className='create-user__outer__inner__body__form__contents__role__box'
+                                        className='create-user__outer__inner__body__form__role__box'
                                         id="role"
                                         name="role"
                                         value={role}
-                                        // multiple={true}
-                                        // size="2"
                                         onChange={onRoleChange}
                                         required
                                     >
@@ -133,20 +127,12 @@ const CreateUser = () => {
                                     </select>
                                 </div>
 
-                                
-
-                            </div>
-
-                            <button>Create</button>
+                            <button className='create-user__outer__inner__body__form__create'>Create</button>
 
                         </form>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
     )
 };

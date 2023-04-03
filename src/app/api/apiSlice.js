@@ -3,7 +3,7 @@ import { setCredentials } from '../../features/auth/authSlice'
 
 const baseQuery = fetchBaseQuery({
     baseUrl: 'https://oranges-and-dashboards.onrender.com',
-    // baseUrl: 'http://localhost:5000', during development
+    // baseUrl: 'http://localhost:5000', // during development
     credentials: 'include',
     prepareHeaders: (headers, { getState }) => {
         const token = getState().auth.token
@@ -48,5 +48,4 @@ export const apiSlice = createApi({
     baseQuery: baseQueryWrapper,
     tagTypes: ['User', 'Dashboard', 'Plan'],
     endpoints: builder => ({})
-    
 })

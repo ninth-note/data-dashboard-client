@@ -18,9 +18,7 @@ const ManageDashboards = () => {
     const { id } = useAuth()
     const { 
         data,
-        isLoading, 
         isSuccess,
-        error,
     } = useGetDashboardsByUserIdQuery(id);
 
     return (
@@ -44,22 +42,26 @@ const ManageDashboards = () => {
 
                         <div className="manage-dashboards__outer__inner__body__list">
 
-                            <div className="manage-dashboards__outer__inner__body__list__header">
+                            {isSuccess ? (
 
-                                <h1 className="manage-dashboards__outer__inner__body__list__header__dashboard">Dashboard</h1>
+                                <div className="manage-dashboards__outer__inner__body__list__header">
 
-                                <h1 className="manage-dashboards__outer__inner__body__list__header__plans">Plans</h1>
+                                    <h1 className="manage-dashboards__outer__inner__body__list__header__dashboard">Dashboard</h1>
 
-                                <h1 className="manage-dashboards__outer__inner__body__list__header__actions">Action</h1>
+                                    <h1 className="manage-dashboards__outer__inner__body__list__header__plans">Plans</h1>
 
-                            </div>
+                                    <h1 className="manage-dashboards__outer__inner__body__list__header__actions">Action</h1>
+
+                                </div>
+
+                            ) : null}
 
                             <div className="manage-dashboards__outer__inner__body__list__items">
 
-                                {isLoading ? (
-                                    <p>Loading...</p>
-                                ) : error ? (
-                                    <p>Error: </p>
+                                {!isSuccess ? (
+                                    <h3 style={{
+                                        marginTop: '250px'
+                                    }}>No Dashboards Found</h3>
                                 ) : isSuccess ? (
 
                                     data.map(dashboard => <Dashboard key={dashboard._id} dashboard={dashboard} />)

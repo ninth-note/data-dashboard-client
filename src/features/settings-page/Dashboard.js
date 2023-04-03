@@ -60,8 +60,8 @@ const Dashboard = ({ dashboard }) => {
             <div className="dashboard-row">
                 <div className='dashboard-row__title'>
                     <h1 className='dashboard-row__title__text'>
-                        {title.substring(0, 20)}
-                        {title.length > 20 && "..."}
+                        {title.substring(0, 12)}
+                        {title.length > 12 && "..."}
                     </h1>
                 </div>
                 <div className='dashboard-row__plans'>

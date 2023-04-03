@@ -4,8 +4,9 @@ import { useState, useEffect } from 'react';
 // navigation
 import { useLocation, useNavigate } from 'react-router-dom'
 
-// import styles
+// import styles & icons
 import '../../styles/features/EditUser.scss'
+import { RiDeleteBin5Fill  } from 'react-icons/ri'
 
 // lesser imports
 import NameTag from '../../components/small/NameTag';
@@ -50,7 +51,6 @@ const EditUser = () => {
             <option
                 key={role}
                 value={role}
-
             > 
                 {role}
             </option >
@@ -70,7 +70,7 @@ const EditUser = () => {
         }
     }, [isSuccess, successfullyDeleted, navigate])
 
-    // development only
+    // for dev purposes
     useEffect(() => {
         console.log(isError)
         console.log(error)
@@ -85,10 +85,6 @@ const EditUser = () => {
     }
 
     const onEdit = async (e) => {
-
-        // console.log(username)
-        // console.log(password)
-        // console.log(role)
 
         e.preventDefault()
 
@@ -117,51 +113,51 @@ const EditUser = () => {
 
                         <div className="edit-user__outer__inner__body__header">
                             <h1 className="edit-user__outer__inner__body__header__title">Edit User</h1>
+
+                            <RiDeleteBin5Fill
+                                style={{ filter: 'drop-shadow(0.2vh 0.25vh 0.4vh rgba(0, 0, 0, 0.4))' }}
+                                className="edit-user__outer__inner__body__header__icon"
+                                onClick={onDelete}
+                            />
                         </div>
 
                         <form className="edit-user__outer__inner__body__form" onSubmit={onEdit}>
 
-                            <div className='edit-user__outer__inner__body__form__contents'>
 
-                                <div className='edit-user__outer__inner__body__form__contents__username'>
-                                    <label className='edit-user__outer__inner__body__form__contents__username__label'>Username:</label>
+                                <div className='edit-user__outer__inner__body__form__username'>
+                                    <label className='edit-user__outer__inner__body__form__username__label'>Username:</label>
                                     <input 
-                                        className='edit-user__outer__inner__body__form__contents__username__box'
+                                        className='edit-user__outer__inner__body__form__username__box'
                                         type="text"
                                         id="username"
                                         name="username"
                                         value={username}
                                         onChange={onUsernameChange}
-                                        placeholder="username"
                                         autoComplete="off"
                                         required
                                     />
                                 </div>
 
-                                <div className='edit-user__outer__inner__body__form__contents__password'>
-                                    <label className='edit-user__outer__inner__body__form__contents__password__label'>Password:</label>
+                                <div className='edit-user__outer__inner__body__form__password'>
+                                    <label className='edit-user__outer__inner__body__form__password__label'>Password:</label>
                                     <input 
-                                        className='edit-user__outer__inner__body__form__contents__password__box'
+                                        className='edit-user__outer__inner__body__form__password__box'
                                         type="password"
                                         id="password"
                                         name="password"
                                         value={password}
                                         onChange={onPasswordChange}
-                                        placeholder="password"
                                         autoComplete="off"
-                                        // required
                                     />
                                 </div>
 
-                                <div className='edit-user__outer__inner__body__form__contents__role'>
-                                    <label className='edit-user__outer__inner__body__form__contents__role__label'>Specify Role:</label>
+                                <div className='edit-user__outer__inner__body__form__role'>
+                                    <label className='edit-user__outer__inner__body__form__role__label'>Specify Role:</label>
                                     <select
-                                        className='edit-user__outer__inner__body__form__contents__role__box'
+                                        className='edit-user__outer__inner__body__form__role__box'
                                         id="role"
                                         name="role"
                                         value={role}
-                                        // multiple={true}
-                                        // size="2"
                                         onChange={onRoleChange}
                                         required
                                     >
@@ -170,15 +166,9 @@ const EditUser = () => {
                                     </select>
                                 </div>
 
-                                
-
-                            </div>
-
-                            <button>Edit</button>
+                            <button className='edit-user__outer__inner__body__form__edit'>Edit</button>
 
                         </form>
-
-                        <button onClick={onDelete}>Delete</button>
 
                     </div>
 

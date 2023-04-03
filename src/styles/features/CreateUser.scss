@@ -145,11 +145,125 @@
 
                     // poisiton contents
                     align-items: center;
-                    // justify-content: center;
+                    justify-content: center;
 
                     // visuals
                     background:rgba(255, 255, 255, 0.7);
 
+                    &__username {
+
+                        // attribute
+                        display: flex;
+                        flex-direction: column;
+
+                        // dimension
+                        height: 70px;
+                        width: 400px;
+
+                        // test
+                        // background:rgba(203, 227, 149, 0.7);
+
+                        &__label {
+
+                            // text
+                            color: rgb(64, 64, 64);
+
+                        }
+
+                        &__box {
+
+                            // structure
+                            border-radius: 15px;
+                            padding: 5px 0px 5px 20px;
+
+                            // position contents
+                            align-items: center;
+
+                        }
+
+                    }
+
+                    &__password {
+
+                        // attribute
+                        display: flex;
+                        flex-direction: column;
+
+                        // dimension
+                        height: 70px;
+                        width: 400px;
+
+                        // test
+                        // background:rgba(203, 227, 149, 0.7);
+
+                        &__label {
+
+                            // text
+                            color: rgb(64, 64, 64);
+
+                        }
+
+                        &__box {
+
+                            // structure
+                            border-radius: 15px;
+                            padding: 5px 0px 5px 20px;
+
+                            // position contents
+                            align-items: center;
+
+                        }
+
+                    }
+
+                    &__role {
+
+                        // attribute
+                        display: flex;
+                        flex-direction: column;
+
+                        // dimension
+                        height: 70px;
+                        width: 400px;
+
+                        // test
+                        // background:rgba(203, 227, 149, 0.7);
+
+                        &__label {
+
+                            // text
+                            color: rgb(64, 64, 64);
+
+                        }
+
+                        &__box {
+
+                            // structure
+                            border-radius: 15px;
+                            padding: 5px 0px 5px 20px;
+
+                            // position contents
+                            align-items: center;
+
+                        }
+
+                    }
+
+                    &__create {
+
+                        // position
+                        margin-top: 15px;
+
+                        // dimensions
+                        width: 140px;
+
+
+                        // structure
+                        padding: 6px;
+                        border-radius: 20px;
+                        // border
+
+                    }
                 }
 
             }

@@ -5,7 +5,6 @@ import { NavLink } from 'react-router-dom';
 import { TbLayoutSidebarLeftExpand, TbLayoutSidebarLeftCollapse } from 'react-icons/tb';
 
 // import styles
-// import '../../styles/scss/components/Sidebar.scss';
 import '../../styles/components/Sidebar.scss'
 
 // redux stuff

@@ -92,27 +92,27 @@
 
             &__line {
 
-                // position & structure
-                margin-left: 40px;
-                width: 30%;
-                height: 3px;
+              // position & structure
+              margin-left: 40px;
+              width: 30%;
+              height: 3px;
 
-                // visuals
-                background-color: rgba(255, 255, 255, 1);
-                box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.8);
+              // visuals
+              background-color: rgba(255, 255, 255, 1);
+              box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.8);
 
             }
 
             &__title {
 
-                // position
-                margin-left: 30px;
+              // position
+              margin-left: 30px;
 
-                // visuals (text)
-                font-weight: 550;
-                font-size: 40px;
-                color: rgba(255, 255, 255, 1);
-                text-shadow: 0 5px 0.15em rgba(0, 0, 0, 0.5), 0 0.05em 0.1em rgba(0, 0, 0, 0.5);
+              // visuals (text)
+              font-weight: 550;
+              font-size: 40px;
+              color: rgba(255, 255, 255, 1);
+              text-shadow: 0 5px 0.15em rgba(0, 0, 0, 0.5), 0 0.05em 0.1em rgba(0, 0, 0, 0.5);
 
             }
 
@@ -144,9 +144,9 @@
           
               &:active {
           
-                  background-color: rgba(233, 159, 159, 0.9);
-                  box-shadow: 1px 0px rgb(113, 113, 113);
-                  transform: translateX(0.5px);
+                background-color: rgba(233, 159, 159, 0.9);
+                box-shadow: 1px 0px rgb(113, 113, 113);
+                transform: translateX(0.5px);
           
               }
 
@@ -169,84 +169,84 @@
 
             &__button1 {
                 
-                // position
-                width: 60%;
-                height: 14%;
-                border: none;
+              // position
+              width: 60%;
+              height: 14%;
+              border: none;
 
-                // text
-                font-weight: 750;
-                font-size: 30px;
-                color: $quaternary;
+              // text
+              font-weight: 750;
+              font-size: 30px;
+              color: $quaternary;
 
-                // visuals
-                background-color: rgba(255, 255, 255, 0.5);
+              // visuals
+              background-color: rgba(255, 255, 255, 0.5);
 
-                // structure
-                border-radius: 10px;
+              // structure
+              border-radius: 10px;
 
-                &:hover {
-                    color: $tertiary-color;
-                    font-size: 28px;
-                    text-shadow: 0 0.05em 0.1em rgba(255, 255, 255, 0.5);
-                    border: solid;
-                }
+              &:hover {
+                color: $tertiary-color;
+                font-size: 28px;
+                text-shadow: 0 0.05em 0.1em rgba(255, 255, 255, 0.5);
+                border: solid;
+              }
 
             }
 
             &__button2 {
                 
-                // position
-                width: 60%;
-                height: 14%;
-                margin-top: 3%;
-                border: none;
+              // position
+              width: 60%;
+              height: 14%;
+              margin-top: 3%;
+              border: none;
 
-                // text
-                font-weight: 750;
-                font-size: 30px;
-                color: #AE0000;
+              // text
+              font-weight: 750;
+              font-size: 30px;
+              color: #AE0000;
 
-                // visuals
-                background-color: rgba(255, 255, 255, 0.5);
+              // visuals
+              background-color: rgba(255, 255, 255, 0.5);
 
-                // structure
-                border-radius: 10px;
+              // structure
+              border-radius: 10px;
 
-                &:hover {
-                    color: $tertiary-color;
-                    font-size: 28px;
-                    text-shadow: 0 0.05em 0.1em rgba(255, 255, 255, 0.5);
-                    border: solid;
-                }
+              &:hover {
+                color: $tertiary-color;
+                font-size: 28px;
+                text-shadow: 0 0.05em 0.1em rgba(255, 255, 255, 0.5);
+                border: solid;
+              }
 
             }
 
             &__button3 {
                 
-                // position
-                width: 30%;
-                height: 16%;
-                margin-top: 7%;
-                border: none;
+              // position
+              width: 30%;
+              height: 16%;
+              margin-top: 7%;
+              border: none;
 
-                // text
-                font-weight: 700;
-                font-size: 40px;
-                color: $quaternary;
+              // text
+              font-weight: 700;
+              font-size: 40px;
+              color: $quaternary;
 
-                // visuals
-                background-color: rgba(255, 255, 255, 0.5);
+              // visuals
+              background-color: rgba(255, 255, 255, 0.5);
 
-                // structure
-                border-radius: 10px;
+              // structure
+              border-radius: 10px;
 
-                &:hover {
-                    color: $tertiary-color;
-                    font-size: 35px;
-                    text-shadow: 0 0.05em 0.1em rgba(255, 255, 255, 0.5);
-                    border: solid;
-                }
+              &:hover {
+                color: $tertiary-color;
+                font-size: 35px;
+                text-shadow: 0 0.05em 0.1em rgba(255, 255, 255, 0.5);
+                border: solid;
+              }
 
             }
 
@@ -271,181 +271,202 @@
     transform: translate(-50%, -50%);
 
     // dimensions
-    height: 50vh;
-    width: 90vh;
+    height: 60vh;
+    width: 100vh;
 
     // structure
-    border-radius: 8vh;
-    border: 0.7vh solid rgb(154, 144, 193);
-
-    // position contents
-    align-items: center;
-    justify-content: center;
+    border-radius: 2vh;
 
     // visuals
-    background-color: rgba(233, 159, 159, 0.8);
+    // background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(210, 221, 251, 0.3);
+    box-shadow: 0.5vh 0.5vh 1vh 0.2vh rgba(124, 124, 124, 0.5);
 
-    &__close {
-
-      // attributes
-      display: flex;
+    &__header {
 
       // position
-      position: absolute;
-      top: 2vh;
-      left: 3vh;
-
-      // dimensions
-      height: 5vh;
-      width: 5vh;
+      display: flex;
+      // flex-direction: column;
+      width: 100vh;
+      height: 6vh;
 
       // structure
-      border: 0.3vh solid;
-      border-radius: 10vh;
-
-      // position contents
-      // align-items: center;
-      // justify-content: center;
-
-      // text
-      font-size: 5vh;
+      border-top-left-radius: 2vh;
+      border-top-right-radius: 2vh;
 
       // visuals
-      color:rgba(0, 0, 0, 1);
-      background: rgba(255, 255, 255, 0.9);
+      background-color: rgba(233, 159, 159, 0.9);
 
-      border: 0.3vh solid rgb(154, 144, 193);
-
-      // animation
-      &:hover {background: rgba(255, 255, 255, 0.4);}
-          
-      &:active {
-  
-          background-color: rgba(227, 34, 34, 0.4);
-          box-shadow: 1px 0px rgb(113, 113, 113);
-          transform: translateY(2px);
-  
-      }
-
-      &__x {
+      &__title {
 
         // position
-        position: fixed;
-        margin-top: -0.3vh;
-        margin-left: 1.3vh;
+        margin-top: 0.3vh;
+        margin-left: 3vh;
 
         // text
+        color:rgba(255, 255, 255, 1);
         font-size: 4vh;
-        color: rgb(154, 144, 193);
+        font-weight: bold;
+        text-shadow: 0 0.8vh 0.15em rgba(0, 0, 0, 0.1), 0 0.05em 0.1em rgba(0, 0, 0, 0.5);
 
       }
 
-    }
+      &__close {
 
-    &__title {
+        // attributes
 
         // position
-        position: absolute;
-        top: 8vh;
-        left: 12.5vh;
+        margin-left: 55vh;
 
         // dimensions
-        width: 70vh;
+        width: 5vh;
 
-        // text
-        font-size: 5vh;
+        // structure
+        border: none;
 
-        // visuals
-        // color: rgb(255, 255, 255);
-        color:rgba(0, 0, 0, 1);
+        // visuals & text
+        color:rgba(255, 255, 255, 1);
+        font-size: 4.5vh;
+        font-weight: bold;
+
+        background: none;
 
         // test
-        // background: rgba(178, 33, 14, 1);
+        // background: rgba(192, 38, 38, 0.8);
 
+        &__icon {
+
+          // position
+          margin-top: -1.6vh;
+
+          transition: color 0.5s ease-in-out;
+
+          // animation
+          &:hover {color: rgba(200, 20, 20, 0.5);}
+            
+          &:active {
+
+            font-size: 4vh;
+    
+          }
+        }
+      }
     }
 
     &__buttons {
 
+      // attributes
+      display: flex;
+      flex-direction: column;
+
+      // positions
+      margin-top: 3.5vh;
+      margin-left: 5.5vh;
+
+      // dimensions
+      height: 47vh;
+      width: 89vh;
+
+      // test
+      // background: rgb(205, 50, 50);
+
+
+      &__list {
+
         // attributes
         display: flex;
-        flex-direction: column;
 
-        // position
-        position: fixed;
-        top: 15vh;
+        // positions
+        margin-top: 7vh;
+        margin-left: 18.5vh;
 
         // dimensions
-        height: 30vh;
-        width: 40vh;
+        height: 14vh;
+        width: 53vh;
 
-        // position contents
+        // structure
+        border-radius: 1.5vh;
+        border: 0.1vh solid;
+
+        // content positioning
         align-items: center;
         justify-content: center;
 
-        // test
-        // background: rgb(208, 17, 185);
+        // text
+        color: rgb(64, 64, 64);
+        font-size: 8vh;
 
-        &__list {
+        // visuals
+        background-color: rgb(226, 239, 254);
 
-            // position
-            position: relative;
-            margin-bottom: 3vh;
+        // animation
+        transition: background-color 0.4s ease-in-out;
 
-            // dimensions
-            height: 10vh;
-            width: 48vh;
-
-            //structure
-            border-radius: 4vh;
-            border: 0.7vh solid rgb(154, 144, 193);
-
-            // text
-            font-size: 6vh;
-            font-weight: 500;
-
-            // visuals
-            background-color: rgba(255, 255, 255, 0.5);
-            color: rgba(67, 67, 67, 1); // rgba(67, 67, 67, 0.6)
-
-            &:hover {
-                // background: rgba(255, 255, 255, 1);
-                font-size: 5.5vh;
-                color: rgb(255, 255, 255);
-                border: 0.7vh solid rgba(255, 255, 255, 0.3);
-            }
-
+        &:hover {background: rgba(233, 159, 159, 0.5);}
+          
+        &:active {
+    
+          background-color: rgba(233, 159, 159, 0.9);
+          font-size: 7.5vh;
+    
         }
 
-        &__create {
+      }
 
-            // position
-            position: relative;
+      &__create {
 
-            // dimensions
-            height: 10vh;
-            width: 48vh;
+        // attributes
+        display: flex;
 
-            //structure
-            border-radius: 4vh;
-            border: 0.7vh solid rgb(154, 144, 193);
+        // positions
+        margin-top: 5vh;
+        margin-left: 18.5vh;
 
-            // text
-            font-size: 6vh;
-            font-weight: 500;
+        // dimensions
+        height: 14vh;
+        width: 53vh;
 
-            // visuals
-            background-color: rgba(255, 255, 255, 0.5);
-            color: rgba(67, 67, 67, 1); // rgba(67, 67, 67, 0.6)
+        // structure
+        border-radius: 1.5vh;
+        border: 0.1vh solid;
 
-            &:hover {
-                // background: rgba(159, 245, 106, 0.1);
-                font-size: 5.5vh;
-                color: rgb(255, 255, 255);
-                border: 0.7vh solid rgba(255, 255, 255, 0.3);
-            }
+        // content positioning
+        align-items: center;
+        justify-content: center;
 
+        // text
+        color: rgb(64, 64, 64);
+        font-size: 8vh;
+
+        // visuals
+        background-color: rgb(226, 239, 254);
+
+        // animation
+        transition: background-color 0.4s ease-in-out;
+
+        &:hover {background: rgba(233, 159, 159, 0.5);}
+          
+        &:active {
+    
+          background-color: rgba(233, 159, 159, 0.9);
+          font-size: 7.5vh;
+    
         }
 
+      }
     }
   }
+}
+
+.modal-overlay {
+  
+  // Apply a transparent background color to the overlay
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: rgba(255, 255, 255, 0.9) !important;
 }

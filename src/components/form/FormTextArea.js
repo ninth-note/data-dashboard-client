@@ -7,8 +7,7 @@ const FormTextArea = (props) => {
     const [focused, setFocused] = useState(false);
     const { label, onChange, id, ...textAreaProps } = props;
   
-    // remove the e it is not required (once you make sure that everything works if I do)
-    const handleFocus = (e) => {
+    const handleFocus = () => {
       setFocused(true);
     };
   

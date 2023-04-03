@@ -13,6 +13,7 @@ import '../../styles/features/Settings.scss'
 
 // import icons
 import { RiAdminFill } from 'react-icons/ri';
+import { CgClose } from 'react-icons/cg'
 
 // import smaller components
 import NameTag from '../../components/small/NameTag'
@@ -117,7 +118,49 @@ const Settings = () => {
           </div>
 
       </div>
+
       <Modal
+        className="settings__modal"
+        overlayClassName="modal-overlay"
+        appElement={document.getElementById('root')}
+        isOpen={modalIsOpen}
+      >
+        <div className="settings__modal__header">
+
+          <h1 className="settings__modal__header__title">User Management</h1>
+          <button 
+            className="settings__modal__header__close" 
+            onClick={onModalClose}
+          >
+            <div 
+              style={{ filter: 'drop-shadow(0.2vh 0.25vh 0.4vh rgba(0, 0, 0, 0.4))' }}
+              
+            >
+              <CgClose className="settings__modal__header__close__icon" />
+            </div>
+          </button>
+          
+        </div>
+
+        <div className='settings__modal__buttons'>
+
+          <button 
+            className="settings__modal__buttons__list" 
+            onClick={handleListUsers}
+          >
+            List Users
+          </button>
+          <button 
+            className="settings__modal__buttons__create"
+            onClick={handleCreateUser}
+          >
+            Create User
+          </button>
+
+        </div>
+      </Modal>
+
+      {/* <Modal
         className="settings__modal"
         appElement={document.getElementById('root')}
         isOpen={modalIsOpen}
@@ -146,7 +189,7 @@ const Settings = () => {
             Create User
           </button>
         </div>
-        </Modal>
+        </Modal> */}
 
     </div>
   )

@@ -1,6 +1,5 @@
-// react & react-router-dom imports
-import { useState, useEffect, useContext } from 'react';
-import { useNavigate } from 'react-router-dom';
+// react import
+import { useContext } from 'react';
 
 // import styles & icons & less significant components
 import '../../styles/features/ShowPlans.scss'
@@ -26,45 +25,12 @@ const ShowPlans = () => {
         setIndex 
     } = useContext(DashContext);
 
-    const [currentId, setCurrentId] = useState()
-
     const { 
         data,
         isLoading,
         isSuccess: successfullyFetchedPlans,
         error,
     } = useGetPlansByDashboardIdQuery(current?._id);
-
-    
-    const [currentData, setCurrentData] = useState([])
-    
-
-    // required for navigating
-    const navigate = useNavigate();
-
-    // when current dashboard changes, update
-    // useEffect(() => {
-
-    //     if (current.length !== 0) {
-    //         // setCurrentPlans
-    //         setCurrentAAA(current)
-    //     }
-    // }, [current, successfullyFetchedPlans])
-
-    // when current dashboard changes, update
-    // useEffect(() => {
-    //     if (current.length !== 0 && data) {
-
-    //         console.log(data)
-    //         // setCurrentId(current._id)
-    //         // if (currentId !== current._id) {
-    //         //     setCurrentData()
-    //         //     console.log(current._id)
-                
-    //         // }
-            
-    //     }
-    // }, [current, data, successfullyFetchedPlans])
 
     // handle the carousel buttons
     const onClickLeft = () => {
@@ -117,26 +83,36 @@ const ShowPlans = () => {
 
                         <div className="plans__outer__inner__body__list">
 
-                            <div className="plans__outer__inner__body__list__header">
+                            {(successfullyFetchedPlans && data.length > 0) ? (
 
-                                <h1 className="plans__outer__inner__body__list__header__plan">Plan</h1>
+                                <div className="plans__outer__inner__body__list__header">
 
-                                <h1 className="plans__outer__inner__body__list__header__graph">Graph</h1>
+                                    <h1 className="plans__outer__inner__body__list__header__plan">Plan</h1>
 
-                                <h1 className="plans__outer__inner__body__list__header__status">Status</h1>
+                                    <h1 className="plans__outer__inner__body__list__header__graph">Graph</h1>
 
-                                <h1 className="plans__outer__inner__body__list__header__actions">Edit</h1>
+                                    <h1 className="plans__outer__inner__body__list__header__status">Status</h1>
 
-                            </div>
+                                    <h1 className="plans__outer__inner__body__list__header__actions">Edit</h1>
+
+                                </div>
+
+                            ) : null}
 
                             <div className="plans__outer__inner__body__list__items">
 
-                                {isLoading ? (
+                                {(dashboards.length === 0) ? (
+                                    <h1 style={{
+                                        marginTop: '250px'
+                                    }}>...</h1>
+                                ) : isLoading ? (
                                     <p>loading...</p>
-                                ) : error ? (
-                                    <p>Error: </p>
-                                ) : (successfullyFetchedPlans)? (
-
+                                ) : (data.length === 0) ? (
+                                    <h3 style={{
+                                        marginTop: '250px'
+                                    }}>No Plans Found</h3>
+                                ) : (successfullyFetchedPlans) ? (
+                                    
                                     data.map(plan => <Plan key={plan._id} plan={plan} />)
 
                                 ) : null}

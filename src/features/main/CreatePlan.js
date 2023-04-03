@@ -71,7 +71,9 @@ const CreatePlan = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
     // holds the final data that will
-    const [plan, setPlan] = useState([])
+    const [plan, setPlan] = useState({
+        title: '',
+    })
 
     // holds the unpacked items to be displayed
     const [blocks, setBlocks] = useState([])
@@ -85,7 +87,7 @@ const CreatePlan = () => {
 
     // check if form was complete
     useEffect(() => {
-        if (plan.length !== 0) {
+        if (plan.length !== 0 && plan.title !== '') {
             setModalIsOpen(true);
         }
     }, [plan])
@@ -156,7 +158,7 @@ const CreatePlan = () => {
 
                         <div className="create-plan__outer__inner__header__title">
                             <h1 className="create-plan__outer__inner__header__title__text">
-                                {current.title}
+                                {isSuccess? current.title : <p>...</p>}
                             </h1>
                         </div>
 
@@ -171,10 +173,15 @@ const CreatePlan = () => {
                             <h1 className="create-plan__outer__inner__body__header__title">Create Plan</h1>
                         </div>
 
-                        <div className="create-plan__outer__inner__body__form">
+                        <div 
+                            style={{ backgroundColor: (!isSuccess)? 'transparent' : ''}}
+                            className="create-plan__outer__inner__body__form"
+                        >
 
                             { !isSuccess? (
-                                <h1>No Dashboards Found</h1>
+                                <h1 style={{
+                                    marginTop: '247px'
+                                }}>...</h1>
                             ) : (
                                 (current.service === 'finance')? (
                                     <FinanceForm 
@@ -198,24 +205,28 @@ const CreatePlan = () => {
             </div>
 
             <Modal
-                className="build__modal"
+                className="create-plan__modal"
                 appElement={document.getElementById('root')}
                 isOpen={modalIsOpen}
                 onRequestClose={handleCloseModal}
             >
-                <h2 className="build__modal__title">
-                    Do you wish to create <span style={{ color: 'rgb(154, 144, 193)' }}>{plan.title}</span>?
+                <h2 className="create-plan__modal__title">
+                    Do you wish to create <span style={{ color: 'rgb(154, 144, 193)' }}>
+                        {plan.title.substring(0, 12)}
+                        {plan.title.length > 12 && '...'} 
+        
+                        </span>?
                 </h2>
 
-                <div className="build__modal__buttons">
+                <div className="create-plan__modal__buttons">
                     <button 
-                        className="build__modal__buttons__close" 
+                        className="create-plan__modal__buttons__close" 
                         onClick={handleCloseModal}
                     >
                         Cancel
                     </button>
                     <button 
-                        className="build__modal__buttons__proceed"
+                        className="create-plan__modal__buttons__proceed"
                         onClick={handleConfirm}
                     >
                         Create

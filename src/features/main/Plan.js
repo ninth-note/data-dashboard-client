@@ -74,7 +74,7 @@ const Plan = ({ plan }) => {
                 <div className='plan-row__status'>
 
                     <h1 
-                        style={{ color: active ? 'rgba(118, 217, 19)' : 'rgb(219, 75, 14)' }}
+                        style={{ color: active ? 'rgb(80, 158, 2)' : 'rgb(219, 75, 14)' }}
                         className='plan-row__status__text'
                     >
                         {active? 'Active' : 'Inactive'}
@@ -125,7 +125,7 @@ const Plan = ({ plan }) => {
                         <div className="plan-row__modal__info__plan">
 
                             <h1 className="plan-row__modal__info__plan__title">
-                                Plan:
+                                Plan name:
                             </h1>
 
                             <h1 className="plan-row__modal__info__plan__value">

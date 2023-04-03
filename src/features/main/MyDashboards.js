@@ -150,7 +150,7 @@ const MyDashboards = () => {
         }
     }
 
-    // when no dashboards exist forward user to create new
+    // when no dashboards exist forward user to create new dashboard
     const onCreate = () => {
         navigate('/new')
     }

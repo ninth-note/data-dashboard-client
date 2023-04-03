@@ -96,7 +96,7 @@
 
                     // position
                     display: flex;
-                    flex-direction: column;
+                    // flex-direction: column;
                     width: 900px;
                     height: 40px;
 
@@ -119,6 +119,31 @@
                         font-size: 28px;
                         font-weight: bold;
                         text-shadow: 0 5px 0.15em rgba(0, 0, 0, 0.1), 0 0.05em 0.1em rgba(0, 0, 0, 0.5);
+
+                    }
+
+                    &__icon {
+
+                        // position
+                        margin-top: 3px;
+                        margin-left: 710px;
+
+                        // text
+                        color:rgb(255, 255, 255);
+                        font-size: 32px;
+
+                        // animation
+                        transition: color 0.5s ease-out;
+
+                        &:hover {
+                            color: rgba(218, 6, 6, 0.8);
+                        }
+
+                        &:active {
+        
+                            font-size: 30px;
+                    
+                        }
 
                     }
 
@@ -145,13 +170,126 @@
 
                     // poisiton contents
                     align-items: center;
-                    // justify-content: center;
+                    justify-content: center;
 
                     // visuals
                     background:rgba(255, 255, 255, 0.7);
 
-                }
+                    &__username {
 
+                        // attribute
+                        display: flex;
+                        flex-direction: column;
+
+                        // dimension
+                        height: 70px;
+                        width: 400px;
+
+                        // test
+                        // background:rgba(203, 227, 149, 0.7);
+
+                        &__label {
+
+                            // text
+                            color: rgb(64, 64, 64);
+
+                        }
+
+                        &__box {
+
+                            // structure
+                            border-radius: 15px;
+                            padding: 5px 0px 5px 20px;
+
+                            // position contents
+                            align-items: center;
+
+                        }
+
+                    }
+
+                    &__password {
+
+                        // attribute
+                        display: flex;
+                        flex-direction: column;
+
+                        // dimension
+                        height: 70px;
+                        width: 400px;
+
+                        // test
+                        // background:rgba(203, 227, 149, 0.7);
+
+                        &__label {
+
+                            // text
+                            color: rgb(64, 64, 64);
+
+                        }
+
+                        &__box {
+
+                            // structure
+                            border-radius: 15px;
+                            padding: 5px 0px 5px 20px;
+
+                            // position contents
+                            align-items: center;
+
+                        }
+
+                    }
+
+                    &__role {
+
+                        // attribute
+                        display: flex;
+                        flex-direction: column;
+
+                        // dimension
+                        height: 70px;
+                        width: 400px;
+
+                        // test
+                        // background:rgba(203, 227, 149, 0.7);
+
+                        &__label {
+
+                            // text
+                            color: rgb(64, 64, 64);
+
+                        }
+
+                        &__box {
+
+                            // structure
+                            border-radius: 15px;
+                            padding: 5px 0px 5px 20px;
+
+                            // position contents
+                            align-items: center;
+
+                        }
+
+                    }
+
+                    &__edit {
+
+                        // position
+                        margin-top: 15px;
+
+                        // dimensions
+                        width: 140px;
+
+
+                        // structure
+                        padding: 6px;
+                        border-radius: 20px;
+                        // border
+
+                    }
+                }
             }
         }
     }

@@ -45,6 +45,17 @@
             // visuals
             background-color: $secondary-color;
 
+            // animation
+            &:hover {background: rgba(233, 159, 159, 0.5);}
+        
+            &:active {
+        
+                background-color: rgba(233, 159, 159, 0.9);
+                box-shadow: 1px 0px rgb(113, 113, 113);
+                transform: translateY(4px);
+        
+            }
+
         }
 
         &__inner {
@@ -225,7 +236,7 @@
                     // justify-content: center;
 
                     // visuals
-                    background:rgba(255, 255, 255, 0.7);
+                    // background:rgba(255, 255, 255, 0.7);
 
                     &__header {
 
@@ -247,7 +258,7 @@
                         // justify-content: center;
 
                         // visuals
-                        background:rgba(107, 107, 107, 0.15);
+                        // background:rgba(107, 107, 107, 0.15);
 
                         &__plan {
 
@@ -386,6 +397,17 @@
 
             // visuals
             background-color: $secondary-color;
+
+            // animation
+            &:hover {background: rgba(233, 159, 159, 0.5);}
+        
+            &:active {
+        
+                background-color: rgba(233, 159, 159, 0.9);
+                box-shadow: 1px 0px rgb(113, 113, 113);
+                transform: translateY(4px);
+        
+            }
 
         }
     }

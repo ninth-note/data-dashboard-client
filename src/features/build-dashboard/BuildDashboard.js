@@ -271,9 +271,8 @@ const BuildDashboard = () => {
             >
                 <h2 className="build__modal__title">
                     Do you wish to create <span style={{ color: 'rgb(154, 144, 193)' }}>
-                        {/* {values.title} */}
-                        {values.title.substring(0, 21)}
-                        {values.title.length > 21 && '...'}
+                        {values.title.substring(0, 15)}
+                        {values.title.length > 15 && '...'}
                     </span> ?
                 </h2>
 

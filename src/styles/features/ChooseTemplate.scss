@@ -490,11 +490,11 @@
             transform: translate(-50%, -50%);
 
             // dimensions
-            height: 55vh;
+            height: 45vh;
             width: 100vh;
 
             // structure
-            border-radius: 8vh;
+            border-radius: 5vh;
             border: 0.7vh solid rgb(154, 144, 193);
 
             // position contents
@@ -514,13 +514,14 @@
                 // position
                 position: absolute;
                 top: 8vh;
-                left: 16vh;
+                left: 12vh;
 
                 // dimensions
-                width: 70vh;
+                width: 80vh;
 
                 // text
-                font-size: 5vh;
+                // font-size: 5vh;
+                font-size: 6vh;
 
                 // visuals
                 // color: rgb(255, 255, 255);
@@ -538,7 +539,7 @@
 
                 // position
                 position: fixed;
-                top: 30vh;
+                top: 25vh;
 
                 // dimensions
                 height: 15vh;

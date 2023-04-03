@@ -10,9 +10,6 @@ const SidebarLayout = () => {
     const { isOpen } = useSelector((state) => state.sidebar);
     const effect = isOpen ? '__darken' : '__normal';
     
-    // return <div style={{
-    //     padding: '0px 0px 0px 0px'
-    // }}>
     return <div className='space'>
         <div className={`space${effect}`}>
             <Outlet />
